@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="/ToDo/style.css">
+</head>
+<body>
+    <section>
+        <h1>To-Do List</h1>
+        <div class="container">
+            <!-- To add and see pending tasks -->
+            <div class="to-do-container">
+                <!-- Pending tasks -->
+                <h3>Things to Do -</h3>
+                <div class="list-of-tasks">
+                    <ol id="list-of-tasks">
+                    </ol>
+                </div>
+                <!-- To add new tasks -->
+                <div class="add-tasks">
+                    <form onsubmit="addTask(event)">
+                        <input type="text" name="task" required>
+                        <button type="submit" for="task" id="submitBtn">Add Task</button>
+                    </form>
+                </div>
+                <!-- List of complated tasks -->
+                <div class="completed-tasks">
+                    <h3>Tasks History:</h3>
+                    <ol id="completed-tasks">
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/ToDo/script.js"></script>
+</body>
+</html>
